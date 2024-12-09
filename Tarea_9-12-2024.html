@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Live</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://via.placeholder.com/1920x1080') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            animation: glow 1s infinite alternate;
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+            }
+            100% {
+                text-shadow: 0 0 20px #fff, 0 0 40px #ff00ff, 0 0 60px #ff00ff;
+            }
+        }
+
+        .image-mobile {
+            display: block;
+            margin: 20px auto;
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .links {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .links a {
+            color: #ff00ff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .videos-section {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .video-container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .video-container img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .video-title, .video-description {
+            text-align: center;
+            margin: 5px 0;
+        }
+
+        .embed-videos {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        iframe {
+            margin: 10px;
+            border: none;
+            border-radius: 15px;
+        }
+
+        .google-sheet {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .google-sheet iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido a Web Live</h1>
+    
+    <!-- Imagen móvil -->
+    <img src="c:\Users\adria\Desktop\Tarea_9-12-2024\c9c7697de87b0b905b9eb2d923aea72e.jpg" alt="Imagen Móvil" class="image-mobile">
+    
+    <!-- Links -->
+    <div class="links">
+        <a href="https://google.com" target="_blank">Google</a>
+        <a href="https://youtube.com" target="_blank">YouTube</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="https://wikipedia.org" target="_blank">Wikipedia</a>
+    </div>
+    
+    <!-- Capturas de video -->
+    <div class="videos-section">
+        <div class="video-container">
+            <img src="c:\Users\adria\Pictures\Screenshots\Captura de pantalla 2024-12-09 190612.png" alt="Captura 1">
+            <p class="video-title">Título del video 1</p>
+            <p class="video-description">Esta es una breve descripción del video 1.</p>
+        </div>
+    </div>
+    
+    <!-- Videos incrustados -->
+    <div class="embed-videos">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1HPgcdg9SMo" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wCK_xwP5alc" allowfullscreen></iframe>
+    </div>
+    
+    <!-- Google Sheet -->
+    <div class="google-sheet">
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT6E6BXWJgyFex-KE8wvCktPd74XihDgC5oKKIwVQe9WpXTRD6hie8TEo5gHG-H4dQHZ4UBTKRUtqZ_/pubhtml?widget=true&amp;headers=false"></iframe>
+    </div>
+</body>
+</html>
